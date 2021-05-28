@@ -1,0 +1,114 @@
+{
+  "broker_uri": "amqp://guest:guest@localhost:5672",
+  "folder": "/home/julian/docker/ifes-2019-09-09/CAPTURA_DE_DADOS_PARTICIPANTES/PARTICIPANTE_08/TIME_UP_GO_RGB",
+  "cameras": [
+    {
+      "id": 0,
+      "config": {
+        "sampling": {
+          "frequency": 7.0
+        },
+        "image": {
+          "resolution": {
+            "width": 1288,
+            "height": 728
+          },
+          "color_space": {
+            "value": "RGB"
+          },
+          "format": {
+            "format": "JPEG",
+            "compression": 0.9
+          }
+        },
+        "camera": {
+          "shutter": {
+            "ratio": 0.2,
+            "automatic": false
+          }
+        }
+      }
+    },
+    {
+      "id": 1,
+      "config": {
+        "sampling": {
+          "frequency": 7.0
+        },
+        "image": {
+          "resolution": {
+            "width": 1288,
+            "height": 728
+          },
+          "color_space": {
+            "value": "RGB"
+          },
+          "format": {
+            "format": "JPEG",
+            "compression": 0.9
+          }
+        },
+        "camera": {
+          "shutter": {
+            "ratio": 0.2,
+            "automatic": false
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "config": {
+        "sampling": {
+          "frequency": 7.0
+        },
+        "image": {
+          "resolution": {
+            "width": 1288,
+            "height": 728
+          },
+          "color_space": {
+            "value": "RGB"
+          },
+          "format": {
+            "format": "JPEG",
+            "compression": 0.9
+          }
+        },
+        "camera": {
+          "shutter": {
+            "ratio": 0.2,
+            "automatic": false
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "config": {
+        "sampling": {
+          "frequency": 7.0
+        },
+        "image": {
+          "resolution": {
+            "width": 1288,
+            "height": 728
+          },
+          "color_space": {
+            "value": "RGB"
+          },
+          "format": {
+            "format": "JPEG",
+            "compression": 0.9
+          }
+        },
+        "camera": {
+          "shutter": {
+            "ratio": 0.2,
+            "automatic": false
+          }
+        }
+      }
+    }
+  ]
+}
