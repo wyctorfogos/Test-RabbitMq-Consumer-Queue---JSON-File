@@ -11,7 +11,10 @@ print(' [*] Waiting for messages. To exit press CTRL+C')
 
 
 def callback(ch, method, properties, body):
-    print(" [x] Received %r" % body)
+    
+    with open('Received_Data.json', 'w', encoding='utf-8') as f:
+        json.dump(body, f, ensure_ascii=False, indent=4)
+    print("Receive")
     time.sleep(body.count(b'.'))
     print(" [x] Done")
     ch.basic_ack(delivery_tag=method.delivery_tag)
