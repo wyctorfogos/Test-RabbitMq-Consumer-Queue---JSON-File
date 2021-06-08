@@ -23,6 +23,10 @@ from is_msgs.image_pb2 import HumanKeypoints as HKP
 from google.protobuf.json_format import ParseDict
 from itertools import permutations
 import pandas as pd
+import sys
+
+sys.argv += 'arg1 arg2'.split()
+data = sys.argv 
 
 def send_information(message):
     connection = pika.BlockingConnection(
@@ -41,7 +45,7 @@ if not os.path.exists(options.folder):
     log.critical("Folder '{}' doesn't exist", options.folder)
 
 while True:
-    with io.open(options.folder+'/p001g01_3d.json') as json_file:
+    with io.open(options.folder+'PARTICIPANTE_{}/{}/p001g01_3d.json'.format(data[0],data[1])) as json_file:
         message = json.load(json_file)
     print(message)
     send_information(message)
